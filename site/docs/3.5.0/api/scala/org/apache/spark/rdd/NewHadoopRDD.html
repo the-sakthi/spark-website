@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Spark 3.5.0 ScalaDoc  - org.apache.spark.rdd.NewHadoopRDD</title>
-          <meta name="description" content="Spark 3.5.0 ScalaDoc - org.apache.spark.rdd.NewHadoopRDD" />
-          <meta name="keywords" content="Spark 3.5.0 ScalaDoc org.apache.spark.rdd.NewHadoopRDD" />
+          <title>Spark 3.5.1 ScalaDoc  - org.apache.spark.rdd.NewHadoopRDD</title>
+          <meta name="description" content="Spark 3.5.1 ScalaDoc - org.apache.spark.rdd.NewHadoopRDD" />
+          <meta name="keywords" content="Spark 3.5.1 ScalaDoc org.apache.spark.rdd.NewHadoopRDD" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       
@@ -25,26 +25,10 @@
         var toRoot = '../../../../';
       </script>
     
-    <!-- Matomo -->
-    <script type="text/javascript">
-        var _paq = window._paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(["disableCookies"]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="https://analytics.apache.org/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '40']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    <!-- End Matomo Code -->
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Spark 3.5.0 ScalaDoc<span id="doc-version"></span></span>
+        <span id="doc-title">Spark 3.5.1 ScalaDoc<span id="doc-version"></span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -261,7 +245,7 @@ sources in HBase, or S3), using the new MapReduce API (<code>org.apache.hadoop.m
 </p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@DeveloperApi</span><span class="args">()</span>
               
-        </dd><dt>Source</dt><dd><a href="https://github.com/apache/spark/tree/v3.5.0/core/src/main/scala/org/apache/spark/rdd/NewHadoopRDD.scala" target="_blank">NewHadoopRDD.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>Instantiating this class directly is not recommended, please use
+        </dd><dt>Source</dt><dd><a href="https://github.com/apache/spark/tree/v3.5.1/core/src/main/scala/org/apache/spark/rdd/NewHadoopRDD.scala" target="_blank">NewHadoopRDD.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>Instantiating this class directly is not recommended, please use
 <code>org.apache.spark.SparkContext.newAPIHadoopRDD()</code></p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
@@ -607,6 +591,8 @@ logic. See <a href="UnionRDD.html" class="extype" name="org.apache.spark.rdd.Uni
               
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="org.apache.spark.rdd.RDD#coalesce" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="coalesce(numPartitions:Int,shuffle:Boolean,partitionCoalescer:Option[org.apache.spark.rdd.PartitionCoalescer])(implicitord:Ordering[T]):org.apache.spark.rdd.RDD[T]"></a><a id="coalesce(Int,Boolean,Option[PartitionCoalescer])(Ordering[(K,V)]):RDD[(K,V)]"></a>
@@ -929,28 +915,6 @@ RDD is checkpointed or not.
       
       <p class="shortcomment cmt">Return a new RDD containing only the elements that satisfy a predicate.</p><div class="fullcomment"><div class="comment cmt"><p>Return a new RDD containing only the elements that satisfy a predicate.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RDD.html" class="extype" name="org.apache.spark.rdd.RDD">RDD</a></dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <span class="permalink">
-      <a href="../../../../org/apache/spark/rdd/NewHadoopRDD.html#finalize():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Throwable]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="org.apache.spark.rdd.RDD#first" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="first():T"></a><a id="first():(K,V)"></a>
       <span class="permalink">
@@ -1102,6 +1066,8 @@ This is not defined if the RDD is checkpointed locally.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.rdd.NewHadoopRDD#getConf" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -1354,6 +1320,8 @@ or <code>PairRDDFunctions.reduceByKey</code> will provide much better performanc
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.rdd.RDD#id" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1997,6 +1965,8 @@ should be <code>false</code> unless this is a pair RDD and the input function do
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -2015,6 +1985,8 @@ should be <code>false</code> unless this is a pair RDD and the input function do
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.rdd.RDD#parent" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2678,28 +2650,6 @@ times (use <code>.distinct()</code> to eliminate them).
       <p class="shortcomment cmt">Mark the RDD as non-persistent, and remove all blocks for it from memory and disk.</p><div class="fullcomment"><div class="comment cmt"><p>Mark the RDD as non-persistent, and remove all blocks for it from memory and disk.
 </p></div><dl class="paramcmts block"><dt class="param">blocking</dt><dd class="cmt"><p>Whether to block until all blocks are deleted (default: false)</p></dd><dt>returns</dt><dd class="cmt"><p>This RDD.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RDD.html" class="extype" name="org.apache.spark.rdd.RDD">RDD</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
-      <span class="permalink">
-      <a href="../../../../org/apache/spark/rdd/NewHadoopRDD.html#wait():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
-    </span>)</span>
-              
-        </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
       <a href="../../../../org/apache/spark/rdd/NewHadoopRDD.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
@@ -2743,6 +2693,28 @@ times (use <code>.distinct()</code> to eliminate them).
     </span>)</span>
               
                 <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/apache/spark/rdd/NewHadoopRDD.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.rdd.RDD#withResources" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2974,7 +2946,34 @@ the same index assignments, you should sort the RDD with sortByKey() or save it 
 
         
 
-        
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/apache/spark/rdd/NewHadoopRDD.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">

@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Spark 3.5.0 ScalaDoc  - org.apache.spark.streaming.dstream.DStream</title>
-          <meta name="description" content="Spark 3.5.0 ScalaDoc - org.apache.spark.streaming.dstream.DStream" />
-          <meta name="keywords" content="Spark 3.5.0 ScalaDoc org.apache.spark.streaming.dstream.DStream" />
+          <title>Spark 3.5.1 ScalaDoc  - org.apache.spark.streaming.dstream.DStream</title>
+          <meta name="description" content="Spark 3.5.1 ScalaDoc - org.apache.spark.streaming.dstream.DStream" />
+          <meta name="keywords" content="Spark 3.5.1 ScalaDoc org.apache.spark.streaming.dstream.DStream" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       
@@ -25,26 +25,10 @@
         var toRoot = '../../../../../';
       </script>
     
-    <!-- Matomo -->
-    <script type="text/javascript">
-        var _paq = window._paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(["disableCookies"]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="https://analytics.apache.org/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '40']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    <!-- End Matomo Code -->
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Spark 3.5.0 ScalaDoc<span id="doc-version"></span></span>
+        <span id="doc-title">Spark 3.5.1 ScalaDoc<span id="doc-version"></span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -255,7 +239,7 @@ parent DStream.</p><p>This class contains the basic operations available on all 
 operations available only on DStreams of key-value pairs, such as <code>groupByKeyAndWindow</code> and
 <code>join</code>. These operations are automatically available on any DStream of pairs
 (e.g., DStream[(Int, Int)] through implicit conversions.</p><p>A DStream internally is characterized by a few basic properties:</p><ul><li>A list of other DStreams that the DStream depends on</li><li>A time interval at which the DStream generates an RDD</li><li>A function that is used to generate an RDD after each time interval
-</li></ul></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/apache/spark/tree/v3.5.0/streaming/src/main/scala/org/apache/spark/streaming/dstream/DStream.scala" target="_blank">DStream.scala</a></dd></dl><div class="toggleContainer block">
+</li></ul></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/apache/spark/tree/v3.5.1/streaming/src/main/scala/org/apache/spark/streaming/dstream/DStream.scala" target="_blank">DStream.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -525,6 +509,8 @@ Instead, we instantiate a new scope during each call to <code>compute</code> bas
               
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="org.apache.spark.streaming.dstream.DStream#context" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="context:org.apache.spark.streaming.StreamingContext"></a><a id="context:StreamingContext"></a>
@@ -693,28 +679,6 @@ information are passed to the RDDs created in this body properly.</p></div><dl c
       </span>
       
       <p class="shortcomment cmt">Return a new DStream containing only the elements that satisfy a predicate.</p>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <span class="permalink">
-      <a href="../../../../../org/apache/spark/streaming/dstream/DStream.html#finalize():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Throwable]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="org.apache.spark.streaming.dstream.DStream#flatMap" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="flatMap[U](flatMapFunc:T=&gt;TraversableOnce[U])(implicitevidence$3:scala.reflect.ClassTag[U]):org.apache.spark.streaming.dstream.DStream[U]"></a><a id="flatMap[U]((T)⇒TraversableOnce[U])(ClassTag[U]):DStream[U]"></a>
       <span class="permalink">
@@ -787,6 +751,8 @@ and then flattening the results
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="org.apache.spark.streaming.dstream.DStream#glom" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="glom():org.apache.spark.streaming.dstream.DStream[Array[T]]"></a><a id="glom():DStream[Array[T]]"></a>
@@ -825,6 +791,8 @@ an array.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.internal.Logging#initializeLogIfNecessary" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1153,6 +1121,8 @@ of the RDD.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -1171,6 +1141,8 @@ of the RDD.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.streaming.dstream.DStream#persist" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -1513,28 +1485,6 @@ on each RDD of 'this' DStream and 'other' DStream.</p>
       
       <p class="shortcomment cmt">Return a new DStream by unifying data of another DStream with this DStream.</p><div class="fullcomment"><div class="comment cmt"><p>Return a new DStream by unifying data of another DStream with this DStream.</p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>Another DStream having the same slideDuration as this DStream.</p></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
-      <span class="permalink">
-      <a href="../../../../../org/apache/spark/streaming/dstream/DStream.html#wait():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
-    </span>)</span>
-              
-        </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
       <a href="../../../../../org/apache/spark/streaming/dstream/DStream.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
@@ -1578,6 +1528,28 @@ on each RDD of 'this' DStream and 'other' DStream.</p>
     </span>)</span>
               
                 <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../org/apache/spark/streaming/dstream/DStream.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.streaming.dstream.DStream#window" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1626,7 +1598,34 @@ the same interval as this DStream.</p></div><dl class="paramcmts block"><dt clas
 
         
 
-        
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../org/apache/spark/streaming/dstream/DStream.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">

@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Spark 3.5.0 ScalaDoc  - org.apache.spark.sql.jdbc.JdbcSQLQueryBuilder</title>
-          <meta name="description" content="Spark 3.5.0 ScalaDoc - org.apache.spark.sql.jdbc.JdbcSQLQueryBuilder" />
-          <meta name="keywords" content="Spark 3.5.0 ScalaDoc org.apache.spark.sql.jdbc.JdbcSQLQueryBuilder" />
+          <title>Spark 3.5.1 ScalaDoc  - org.apache.spark.sql.jdbc.JdbcSQLQueryBuilder</title>
+          <meta name="description" content="Spark 3.5.1 ScalaDoc - org.apache.spark.sql.jdbc.JdbcSQLQueryBuilder" />
+          <meta name="keywords" content="Spark 3.5.1 ScalaDoc org.apache.spark.sql.jdbc.JdbcSQLQueryBuilder" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       
@@ -25,26 +25,10 @@
         var toRoot = '../../../../../';
       </script>
     
-    <!-- Matomo -->
-    <script type="text/javascript">
-        var _paq = window._paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(["disableCookies"]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="https://analytics.apache.org/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '40']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    <!-- End Matomo Code -->
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Spark 3.5.0 ScalaDoc<span id="doc-version"></span></span>
+        <span id="doc-title">Spark 3.5.1 ScalaDoc<span id="doc-version"></span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -230,7 +214,7 @@ level interfaces. These are subject to changes or removal in minor releases.
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The builder to build a single SELECT query.</p><p>Note: All the <code>withXXX</code> methods will be invoked at most once. The invocation order does not
 matter, as all these clauses follow the natural SQL order: sample the table first, then filter,
 then group by, then sort, then offset, then limit.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/apache/spark/tree/v3.5.0/sql/core/src/main/scala/org/apache/spark/sql/jdbc/JdbcSQLQueryBuilder.scala" target="_blank">JdbcSQLQueryBuilder.scala</a></dd><dt>Since</dt><dd><p>3.5.0</p></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/apache/spark/tree/v3.5.1/sql/core/src/main/scala/org/apache/spark/sql/jdbc/JdbcSQLQueryBuilder.scala" target="_blank">JdbcSQLQueryBuilder.scala</a></dd><dt>Since</dt><dd><p>3.5.0</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -409,6 +393,8 @@ then group by, then sort, then offset, then limit.
               
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="org.apache.spark.sql.jdbc.JdbcSQLQueryBuilder#columnList" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="columnList:String"></a>
@@ -459,28 +445,6 @@ then group by, then sort, then offset, then limit.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <span class="permalink">
-      <a href="../../../../../org/apache/spark/sql/jdbc/JdbcSQLQueryBuilder.html#finalize():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Throwable]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
@@ -498,6 +462,8 @@ then group by, then sort, then offset, then limit.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.sql.jdbc.JdbcSQLQueryBuilder#groupByClause" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -534,6 +500,8 @@ then group by, then sort, then offset, then limit.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -603,6 +571,8 @@ then group by, then sort, then offset, then limit.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -621,6 +591,8 @@ then group by, then sort, then offset, then limit.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.sql.jdbc.JdbcSQLQueryBuilder#offset" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -707,28 +679,6 @@ then group by, then sort, then offset, then limit.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
-      <span class="permalink">
-      <a href="../../../../../org/apache/spark/sql/jdbc/JdbcSQLQueryBuilder.html#wait():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
-    </span>)</span>
-              
-        </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
       <a href="../../../../../org/apache/spark/sql/jdbc/JdbcSQLQueryBuilder.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
@@ -772,6 +722,28 @@ then group by, then sort, then offset, then limit.
     </span>)</span>
               
                 <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../org/apache/spark/sql/jdbc/JdbcSQLQueryBuilder.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.sql.jdbc.JdbcSQLQueryBuilder#whereClause" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -869,7 +841,7 @@ e.g. The column name is the raw name or quoted name.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withPredicates</span><span class="params">(<span name="predicates">predicates: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="org.apache.spark.sql.connector.expressions.filter.Predicate">Predicate</span>]</span>, <span name="part">part: <span class="extype" name="org.apache.spark.sql.execution.datasources.jdbc.JDBCPartition">JDBCPartition</span></span>)</span><span class="result">: <a href="" class="extype" name="org.apache.spark.sql.jdbc.JdbcSQLQueryBuilder">JdbcSQLQueryBuilder</a></span>
+        <span class="name">withPredicates</span><span class="params">(<span name="predicates">predicates: <span class="extype" name="scala.Array">Array</span>[<a href="../connector/expressions/filter/Predicate.html" class="extype" name="org.apache.spark.sql.connector.expressions.filter.Predicate">Predicate</a>]</span>, <span name="part">part: <span class="extype" name="org.apache.spark.sql.execution.datasources.jdbc.JDBCPartition">JDBCPartition</span></span>)</span><span class="result">: <a href="" class="extype" name="org.apache.spark.sql.jdbc.JdbcSQLQueryBuilder">JdbcSQLQueryBuilder</a></span>
       </span>
       
       <p class="shortcomment cmt">Constructs the WHERE clause that following dialect's SQL syntax.</p>
@@ -911,7 +883,34 @@ e.g. The column name is the raw name or quoted name.
 
         
 
-        
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../org/apache/spark/sql/jdbc/JdbcSQLQueryBuilder.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">

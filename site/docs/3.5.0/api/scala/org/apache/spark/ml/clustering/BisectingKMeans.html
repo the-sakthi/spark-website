@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Spark 3.5.0 ScalaDoc  - org.apache.spark.ml.clustering.BisectingKMeans</title>
-          <meta name="description" content="Spark 3.5.0 ScalaDoc - org.apache.spark.ml.clustering.BisectingKMeans" />
-          <meta name="keywords" content="Spark 3.5.0 ScalaDoc org.apache.spark.ml.clustering.BisectingKMeans" />
+          <title>Spark 3.5.1 ScalaDoc  - org.apache.spark.ml.clustering.BisectingKMeans</title>
+          <meta name="description" content="Spark 3.5.1 ScalaDoc - org.apache.spark.ml.clustering.BisectingKMeans" />
+          <meta name="keywords" content="Spark 3.5.1 ScalaDoc org.apache.spark.ml.clustering.BisectingKMeans" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       
@@ -25,26 +25,10 @@
         var toRoot = '../../../../../';
       </script>
     
-    <!-- Matomo -->
-    <script type="text/javascript">
-        var _paq = window._paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(["disableCookies"]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="https://analytics.apache.org/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '40']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    <!-- End Matomo Code -->
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Spark 3.5.0 ScalaDoc<span id="doc-version"></span></span>
+        <span id="doc-title">Spark 3.5.1 ScalaDoc<span id="doc-version"></span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -285,7 +269,7 @@ larger clusters get higher priority.
       <span class="symbol">&quot;2.0.0&quot;</span>
     </span>)</span>
               
-        </dd><dt>Source</dt><dd><a href="https://github.com/apache/spark/tree/v3.5.0/mllib/src/main/scala/org/apache/spark/ml/clustering/BisectingKMeans.scala" target="_blank">BisectingKMeans.scala</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="http://glaros.dtc.umn.edu/gkhome/fetch/papers/docclusterKDDTMW00.pdf">
+        </dd><dt>Source</dt><dd><a href="https://github.com/apache/spark/tree/v3.5.1/mllib/src/main/scala/org/apache/spark/ml/clustering/BisectingKMeans.scala" target="_blank">BisectingKMeans.scala</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="http://glaros.dtc.umn.edu/gkhome/fetch/papers/docclusterKDDTMW00.pdf">
 Steinbach, Karypis, and Kumar, A comparison of document clustering techniques,
 KDD Workshop on Text Mining, 2000.</a></p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
@@ -512,6 +496,8 @@ KDD Workshop on Text Mining, 2000.</a></p></span></dd></dl><div class="toggleCon
               
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="org.apache.spark.ml.clustering.BisectingKMeans#copy" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="copy(extra:org.apache.spark.ml.param.ParamMap):org.apache.spark.ml.clustering.BisectingKMeans"></a><a id="copy(ParamMap):BisectingKMeans"></a>
@@ -717,28 +703,6 @@ default param values less than user-supplied values less than extra.
       </span>
       
       <p class="shortcomment cmt">Param for features column name.</p><div class="fullcomment"><div class="comment cmt"><p>Param for features column name.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../param/shared/HasFeaturesCol.html" class="extype" name="org.apache.spark.ml.param.shared.HasFeaturesCol">HasFeaturesCol</a></dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <span class="permalink">
-      <a href="../../../../../org/apache/spark/ml/clustering/BisectingKMeans.html#finalize():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Throwable]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="org.apache.spark.ml.clustering.BisectingKMeans#fit" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fit(dataset:org.apache.spark.sql.Dataset[_]):org.apache.spark.ml.clustering.BisectingKMeansModel"></a><a id="fit(Dataset[_]):BisectingKMeansModel"></a>
       <span class="permalink">
@@ -872,6 +836,8 @@ Subclasses could override this to optimize multi-model training.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.ml.param.Params#getDefault" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1115,6 +1081,8 @@ if neither is set.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.internal.Logging#initializeLogIfNecessary" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1502,6 +1470,8 @@ of points (if less than 1.0) of a divisible cluster (default: 1.0).</p></div><dl
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -1520,6 +1490,8 @@ of points (if less than 1.0) of a divisible cluster (default: 1.0).</p></div><dl
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.ml.param.Params#params" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1988,28 +1960,6 @@ be assumed valid until proven otherwise.
       
       <p class="shortcomment cmt">Validates and transforms the input schema.</p><div class="fullcomment"><div class="comment cmt"><p>Validates and transforms the input schema.</p></div><dl class="paramcmts block"><dt class="param">schema</dt><dd class="cmt"><p>input schema</p></dd><dt>returns</dt><dd class="cmt"><p>output schema</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>BisectingKMeansParams</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
-      <span class="permalink">
-      <a href="../../../../../org/apache/spark/ml/clustering/BisectingKMeans.html#wait():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
-    </span>)</span>
-              
-        </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
       <a href="../../../../../org/apache/spark/ml/clustering/BisectingKMeans.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
@@ -2055,6 +2005,28 @@ be assumed valid until proven otherwise.
                 <span class="name">@native</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../org/apache/spark/ml/clustering/BisectingKMeans.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
     </li><li name="org.apache.spark.ml.param.shared.HasWeightCol#weightCol" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="param">
       <a id="weightCol:org.apache.spark.ml.param.Param[String]"></a><a id="weightCol:Param[String]"></a>
       <span class="permalink">
@@ -2094,7 +2066,34 @@ be assumed valid until proven otherwise.
 
         
 
-        
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../org/apache/spark/ml/clustering/BisectingKMeans.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">

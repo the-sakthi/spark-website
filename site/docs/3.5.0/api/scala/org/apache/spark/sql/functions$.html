@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Spark 3.5.0 ScalaDoc  - org.apache.spark.sql.functions</title>
-          <meta name="description" content="Spark 3.5.0 ScalaDoc - org.apache.spark.sql.functions" />
-          <meta name="keywords" content="Spark 3.5.0 ScalaDoc org.apache.spark.sql.functions" />
+          <title>Spark 3.5.1 ScalaDoc  - org.apache.spark.sql.functions</title>
+          <meta name="description" content="Spark 3.5.1 ScalaDoc - org.apache.spark.sql.functions" />
+          <meta name="keywords" content="Spark 3.5.1 ScalaDoc org.apache.spark.sql.functions" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       
@@ -25,26 +25,10 @@
         var toRoot = '../../../../';
       </script>
     
-    <!-- Matomo -->
-    <script type="text/javascript">
-        var _paq = window._paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(["disableCookies"]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="https://analytics.apache.org/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '40']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    <!-- End Matomo Code -->
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Spark 3.5.0 ScalaDoc<span id="doc-version"></span></span>
+        <span id="doc-title">Spark 3.5.1 ScalaDoc<span id="doc-version"></span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -225,6 +209,22 @@ level interfaces. These are subject to changes or removal in minor releases.
       </span>
       <span class="symbol">
         <a title="" href="columnar/index.html"><span class="name">columnar</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.apache.spark.sql">sql</a></dd></dl></div>
+    </li><li name="org.apache.spark.sql.connector" visbl="pub" class="indented5 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="connector"></a><a id="connector:connector"></a>
+      <span class="permalink">
+      <a href="../../../../org/apache/spark/sql/connector/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="connector/index.html"><span class="name">connector</span></a>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.apache.spark.sql">sql</a></dd></dl></div>
@@ -519,7 +519,7 @@ for historical reasons.
 </p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@Stable</span><span class="args">()</span>
               
-        </dd><dt>Source</dt><dd><a href="https://github.com/apache/spark/tree/v3.5.0/sql/core/src/main/scala/org/apache/spark/sql/functions.scala" target="_blank">functions.scala</a></dd><dt>Since</dt><dd><p>1.3.0</p></dd></dl><div class="toggleContainer block">
+        </dd><dt>Source</dt><dd><a href="https://github.com/apache/spark/tree/v3.5.1/sql/core/src/main/scala/org/apache/spark/sql/functions.scala" target="_blank">functions.scala</a></dd><dt>Since</dt><dd><p>1.3.0</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -2721,6 +2721,8 @@ If n is larger than 256 the result is equivalent to chr(n % 256)
               
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="org.apache.spark.sql.functions#coalesce" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="normal_funcs">
       <a id="coalesce(e:org.apache.spark.sql.Column*):org.apache.spark.sql.Column"></a><a id="coalesce(Column*):Column"></a>
@@ -4287,28 +4289,6 @@ df.groupBy(expr(<span class="lit">"length(word)"</span>)).count()</pre></div></d
       </span>
       
       <p class="shortcomment cmt">Returns an array of elements for which a predicate holds in a given array.</p><div class="fullcomment"><div class="comment cmt"><p>Returns an array of elements for which a predicate holds in a given array.</p><pre>df.select(filter(col(<span class="lit">"s"</span>), x <span class="kw">=&gt;</span> x % <span class="num">2</span> === <span class="num">0</span>))</pre></div><dl class="paramcmts block"><dt class="param">column</dt><dd class="cmt"><p>the input array column</p></dd><dt class="param">f</dt><dd class="cmt"><p>col =&gt; predicate, the Boolean predicate to filter the input column</p></dd></dl><dl class="attributes block"> <dt>Since</dt><dd><p>3.0.0</p></dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <span class="permalink">
-      <a href="../../../../org/apache/spark/sql/functions$.html#finalize():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Throwable]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="org.apache.spark.sql.functions#find_in_set" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="string_funcs">
       <a id="find_in_set(str:org.apache.spark.sql.Column,strArray:org.apache.spark.sql.Column):org.apache.spark.sql.Column"></a><a id="find_in_set(Column,Column):Column"></a>
       <span class="permalink">
@@ -4973,6 +4953,8 @@ outside of the array boundaries, then this function returns NULL.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="org.apache.spark.sql.functions#get_json_object" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="collection_funcs">
       <a id="get_json_object(e:org.apache.spark.sql.Column,path:String):org.apache.spark.sql.Column"></a><a id="get_json_object(Column,String):Column"></a>
@@ -5162,6 +5144,8 @@ grouping columns).</p></span></dd></dl></div>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.sql.functions#hex" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="math_funcs">
@@ -8061,6 +8045,8 @@ df.filter( not(df.col(<span class="lit">"isActive"</span>)) );</pre></div><dl cl
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -8079,6 +8065,8 @@ df.filter( not(df.col(<span class="lit">"isActive"</span>)) );</pre></div><dl cl
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.sql.functions#now" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="datetime_funcs">
@@ -12819,28 +12807,6 @@ UUID 36-character string.
 and the second being a git revision.
 </p></div><dl class="attributes block"> <dt>Since</dt><dd><p>3.5.0</p></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
-      <span class="permalink">
-      <a href="../../../../org/apache/spark/sql/functions$.html#wait():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
-    </span>)</span>
-              
-        </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
       <a href="../../../../org/apache/spark/sql/functions$.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
@@ -12884,6 +12850,28 @@ and the second being a git revision.
     </span>)</span>
               
                 <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/apache/spark/sql/functions$.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="org.apache.spark.sql.functions#weekday" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="datetime_funcs">
@@ -13458,6 +13446,30 @@ array, before applying the function.</p><pre>df.select(zip_with(df1(<span class=
                 <span class="name">@deprecated</span>
               
         </dd><dt>Deprecated</dt><dd class="cmt"><p>Use call_udf</p></dd><dt>Since</dt><dd><p>1.5.0</p></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/apache/spark/sql/functions$.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li><li name="org.apache.spark.sql.functions#monotonicallyIncreasingId" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="normal_funcs">
       <a id="monotonicallyIncreasingId():org.apache.spark.sql.Column"></a><a id="monotonicallyIncreasingId():Column"></a>
       <span class="permalink">
